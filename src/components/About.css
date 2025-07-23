@@ -1,0 +1,129 @@
+/* AboutUs.css */
+
+.about-us-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .about-us-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-us-image:hover img {
+    transform: scale(1.03);
+  }
+  
+  .about-us-text {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .brand-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+  .brand-subheading {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+  
+  .brand-description {
+    margin-bottom: 2rem;
+  }
+  
+  .brand-description p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .brand-features {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.5rem 0;
+  }
+  
+  .brand-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #4a5568;
+  }
+  
+  .brand-features li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4299e1;
+    font-weight: bold;
+  }
+  
+  .cta-button {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+  }
+  
+  .cta-button:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-us-content {
+      flex-direction: column;
+    }
+    
+    .about-us-image, .about-us-text {
+      flex: none;
+      width: 100%;
+    }
+    
+    .brand-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us-container {
+      padding: 2rem 1rem;
+    }
+    
+    .brand-heading {
+      font-size: 1.8rem;
+    }
+  }

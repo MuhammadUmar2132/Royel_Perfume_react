@@ -1,0 +1,79 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .login-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-card h2 {
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .login-card p {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a6bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #3a5bef;
+  }
+  
+  .login-footer {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .signup-link, .forgot-password {
+    color: #4a6bff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .signup-link:hover, .forgot-password:hover {
+    text-decoration: underline;
+  }

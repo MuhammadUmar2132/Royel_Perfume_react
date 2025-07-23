@@ -1,0 +1,165 @@
+/* AddProduct.css */
+
+/* Base styles */
+.product-form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.product-form-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 600px;
+  transition: all 0.3s ease;
+}
+
+.form-title {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+
+.form-input, .form-textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s;
+  background-color: #f9fafc;
+}
+
+.form-input:focus, .form-textarea:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  background-color: white;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* File upload styles */
+.file-upload-wrapper {
+  position: relative;
+  margin-top: 5px;
+}
+
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.file-upload-input {
+  position: absolute;
+  left: -9999px;
+}
+
+.file-upload-button {
+  padding: 10px 15px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.file-upload-button:hover {
+  background-color: #3a7bc8;
+}
+
+.file-upload-text {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+/* Submit button */
+.submit-button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #3a7bc8;
+  transform: translateY(-2px);
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Message styles */
+.message {
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .product-form-card {
+    padding: 20px;
+  }
+  
+  .form-title {
+    font-size: 20px;
+  }
+}
