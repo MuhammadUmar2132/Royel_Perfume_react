@@ -7,6 +7,7 @@ function ProductForm() {
     productId: '',
     productName: '',
     productDescription: '',
+    productPrice: '',      // ✅ Added this field
     image: null
   });
 
@@ -30,6 +31,7 @@ function ProductForm() {
     data.append('productId', formData.productId);
     data.append('productName', formData.productName);
     data.append('productDescription', formData.productDescription);
+    data.append('productPrice', formData.productPrice);  // ✅ Added here
     data.append('image', formData.image);
 
     try {
@@ -39,12 +41,13 @@ function ProductForm() {
         productId: '',
         productName: '',
         productDescription: '',
+        productPrice: '',   // ✅ Reset as well
         image: null
       });
     } catch (err) {
-      setMessage({ 
-        text: err.response?.data?.error || 'Error adding product', 
-        type: 'error' 
+      setMessage({
+        text: err.response?.data?.error || 'Error adding product',
+        type: 'error'
       });
     } finally {
       setIsSubmitting(false);
@@ -55,7 +58,7 @@ function ProductForm() {
     <div className="product-form-container">
       <div className="product-form-card">
         <h2 className="form-title">Add New Product</h2>
-        
+
         {message.text && (
           <div className={`message ${message.type}`}>
             {message.text}
@@ -74,7 +77,7 @@ function ProductForm() {
               className="form-input"
             />
           </div>
-          
+
           <div className="form-group">
             <label className="form-label">Product Name</label>
             <input
@@ -86,7 +89,7 @@ function ProductForm() {
               className="form-input"
             />
           </div>
-          
+
           <div className="form-group">
             <label className="form-label">Product Description</label>
             <textarea
@@ -97,7 +100,19 @@ function ProductForm() {
               rows="4"
             />
           </div>
-          
+
+          <div className="form-group">
+            <label className="form-label">Product Price</label>
+            <input
+              type="text"
+              name="productPrice"
+              value={formData.productPrice}
+              onChange={handleChange}
+              required
+              className="form-input"
+            />
+          </div>
+
           <div className="form-group">
             <label className="form-label">Product Image</label>
             <div className="file-upload-wrapper">
@@ -117,9 +132,9 @@ function ProductForm() {
               </label>
             </div>
           </div>
-          
-          <button 
-            type="submit" 
+
+          <button
+            type="submit"
             className="submit-button"
             disabled={isSubmitting}
           >

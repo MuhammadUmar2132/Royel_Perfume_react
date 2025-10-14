@@ -1,7 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
+
 import Navbar from './components/Navbar';
+import CartPage from './components/CartPage';
+
+
+
+
+
+ 
 import About from './components/About';
 import ProductPage from './components/ProductPage';
 import LandingPage from './components/LandingPage';
@@ -33,6 +41,11 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/add-product" element={<AddProduct />} />
+        <Route path="/cart" element={<CartPage />} />
+       
+
+         
+
 
         {/* <Route path="/product/:id" element={<ProductDetail />} /> */}
       </Routes>

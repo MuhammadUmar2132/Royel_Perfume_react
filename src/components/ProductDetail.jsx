@@ -36,6 +36,7 @@ function ProductDetail() {
             <p className="product-id">ID: {product.productId}</p>
             <p className="product-description">{product.productDescription}</p>
           </div>
+          
         ))}
       </div>
     </div>

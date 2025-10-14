@@ -6,6 +6,8 @@ import axios from 'axios';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    
+      <App />
+    
   </BrowserRouter>
 );
