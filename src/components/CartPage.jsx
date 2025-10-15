@@ -31,9 +31,9 @@ function CartPage() {
     setCartItems([]);
   };
 
-  // ✅ Handle checkout navigation
+  // ✅ Handle full checkout
   const handleCheckout = () => {
-    navigate("/purchase"); // 👈 redirects to purchase page
+    navigate("/purchase");
   };
 
   return (
@@ -59,12 +59,15 @@ function CartPage() {
                   <p>Quantity: {item.quantity}</p>
                   <p>Total: ${(item.productPrice * item.quantity).toFixed(2)}</p>
                 </div>
-                <button
-                  className="remove-button"
-                  onClick={() => removeFromCart(item.productId)}
-                >
-                  Remove
-                </button>
+
+                <div className="cart-item-actions">
+                  <button
+                    className="remove-button"
+                    onClick={() => removeFromCart(item.productId)}
+                  >
+                    Remove
+                  </button>
+                </div>
               </div>
             ))}
           </div>

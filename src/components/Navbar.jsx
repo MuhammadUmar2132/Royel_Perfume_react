@@ -38,7 +38,7 @@ const Navbar = () => {
           <a onClick={() => handleNavigate('/product')}>Product</a>
           <a onClick={() => handleNavigate('/client')}>Client</a>
           <a onClick={() => handleNavigate('/contact')}>Contact</a>
-          <a onClick={() => handleNavigate('/dashboard')}>Dashboard</a>
+          {/* <a onClick={() => handleNavigate('/dashboard')}>Dashboard</a> */}
         </div>
 
         <div className={styles.searchAndCart}>
@@ -95,7 +95,7 @@ const Navbar = () => {
           <a onClick={() => handleNavigate('/product')}>Product</a>
           <a onClick={() => handleNavigate('/client')}>Client</a>
           <a onClick={() => handleNavigate('/contact')}>Contact</a>
-          <a onClick={() => handleNavigate('/dashboard')}>Dashboard</a>
+          {/* <a onClick={() => handleNavigate('/dashboard')}>Dashboard</a> */}
           
           <div className={styles.mobileAuthCart}>
             <button className={styles.signInBtn} onClick={() => handleNavigate('/signin')}>Sign In</button>
