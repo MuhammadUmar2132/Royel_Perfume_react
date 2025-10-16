@@ -30,7 +30,7 @@ const PurchaseForm = () => {
       alert("Purchase successful!");
       console.log(response.data);
     } catch (error) {
-      console.error("Error submitting purchase:", error);
+      console.error("Error submtting purchase:", error);
       alert("Error submitting purchase");
     } finally {
       setIsLoading(false);
